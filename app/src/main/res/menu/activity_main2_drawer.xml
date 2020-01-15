@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_pay_hoa"
+            android:icon="@drawable/hoa_iiicon"
+            android:title="HOA(Residence Asso.)" />
+        <!--<item-->
+            <!--android:id="@+id/nav_document"-->
+            <!--android:icon="@drawable/file"-->
+            <!--android:title="Documents" />-->
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/event"
+            android:title="Events" />
+        <item
+            android:id="@+id/nav_maint_request"
+            android:icon="@drawable/maintenance"
+            android:title="Maintenance Request" />
+            <!--<item-->
+            <!--android:id="@+id/nav_vault"-->
+            <!--android:icon="@drawable/vault"-->
+            <!--android:title="The Vault" />-->
+
+        <item
+            android:visible="false"
+            android:id="@+id/nav_community_deals"
+            android:icon="@drawable/commu_icon"
+            android:title="Community stream" />
+
+        <item
+            android:id="@+id/nav_ireport"
+            android:icon="@drawable/eye1"
+            android:title="iReport" />
+
+        <item
+            android:id="@+id/nav_vendor"
+            android:icon="@drawable/vendor"
+            android:title="Vendors (Payment Portal)" />
+
+        <item
+            android:id="@+id/nav_direct_list"
+            android:icon="@drawable/shopping_list"
+            android:title="Directory Listing" />
+
+        <item
+            android:id="@+id/nav_marketplace"
+            android:icon="@drawable/marketplace"
+            android:title="Market Place" />
+
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/newspaper"
+            android:title="News" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_support"
+                android:icon="@drawable/help"
+                android:title="Support" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

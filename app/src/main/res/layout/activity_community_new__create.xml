@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:bind="http://schemas.android.com/apk/res/android">
+    <data class = "ActivityCreateCommunityBinding"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".Activity.Community.CommunityNew_CreateActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_post"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_arrow_back" />
+
+
+            <TextView
+                android:textAlignment="center"
+                android:text="Create Community"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:srcCompat="@drawable/ic_arrow_back" />-->
+
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_weight="0.18"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textview14Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Please enter all fields"
+                />
+
+
+
+
+            <AutoCompleteTextView
+                android:id="@+id/et_commu_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/shape_edittext"
+                android:drawableLeft="@drawable/user_name"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="Community name"
+                android:inputType="textPersonName"
+                android:padding="@dimen/_10sdp" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@drawable/shape_edittext"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:layout_width="match_parent"
+
+                android:layout_height="@dimen/_100sdp">
+
+        <ImageView
+            android:drawablePadding="@dimen/_10sdp"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            app:srcCompat="@drawable/ic_lock"
+            />
+
+
+            <EditText
+                android:windowSoftInputMode="stateAlwaysVisible"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:id="@+id/et_commu_desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/_10sdp"
+                android:hint="Description"
+                android:background="@null"
+                android:inputType="textMultiLine"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:gravity="start"
+                 />
+
+            </LinearLayout>
+
+            <EditText
+                android:windowSoftInputMode="stateAlwaysVisible"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:id="@+id/et_addres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/shape_edittext"
+                android:drawableLeft="@drawable/ic_lock"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="Address"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp" />
+
+            <EditText
+                android:visibility="gone"
+                android:windowSoftInputMode="stateAlwaysVisible"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:id="@+id/et_lga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/shape_edittext"
+                android:drawableLeft="@drawable/ic_lock"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="LGA"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp" />
+
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select country"
+                android:layout_margin="@dimen/_5sdp"
+                />
+
+
+            <Spinner
+                android:background="@drawable/shape_edittext"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/spin_country"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp">
+
+            </Spinner>
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select state"
+                android:layout_margin="@dimen/_5sdp"
+                />
+
+
+            <Spinner
+                android:background="@drawable/shape_edittext"
+                android:id="@+id/spin_state"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp">
+
+            </Spinner>
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select city"
+                android:layout_margin="@dimen/_5sdp"
+                />
+
+            <Spinner
+                android:background="@drawable/shape_edittext"
+                android:id="@+id/spin_city"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp">
+
+            </Spinner>
+
+
+            <!--<TextView-->
+                <!--android:layout_marginTop="@dimen/_10sdp"-->
+                <!--style="@style/textview14Primary"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Created by:"-->
+                <!--/>-->
+
+
+            <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_10sdp"-->
+                <!--android:background="@drawable/shape_edittext"-->
+                <!--android:drawableLeft="@drawable/ic_lock"-->
+                <!--android:drawablePadding="@dimen/_10sdp"-->
+                <!--android:hint="First name"-->
+                <!--android:inputType="text"-->
+                <!--android:padding="@dimen/_10sdp" />-->
+
+            <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_10sdp"-->
+                <!--android:background="@drawable/shape_edittext"-->
+                <!--android:drawableLeft="@drawable/ic_lock"-->
+                <!--android:drawablePadding="@dimen/_10sdp"-->
+                <!--android:hint="Last name"-->
+                <!--android:inputType="text"-->
+                <!--android:padding="@dimen/_10sdp" />-->
+
+
+            <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_10sdp"-->
+                <!--android:background="@drawable/shape_edittext"-->
+                <!--android:drawableLeft="@drawable/ic_lock"-->
+                <!--android:drawablePadding="@dimen/_10sdp"-->
+                <!--android:hint="Email name"-->
+                <!--android:inputType="text"-->
+                <!--android:padding="@dimen/_10sdp" />-->
+
+            <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_10sdp"-->
+                <!--android:background="@drawable/shape_edittext"-->
+                <!--android:drawableLeft="@drawable/ic_lock"-->
+                <!--android:drawablePadding="@dimen/_10sdp"-->
+                <!--android:hint="Phone number"-->
+                <!--android:inputType="text"-->
+                <!--android:padding="@dimen/_10sdp" />-->
+
+
+            <CheckBox
+                android:id="@+id/check_live_commu"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do you live in this community"
+                />
+
+            <CheckBox
+                android:id="@+id/check_owner_commu"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Are you a property owner in this community"
+                />
+
+            <CheckBox
+                android:id="@+id/check_work_commu"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do you work in this community"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                style="@style/textview14Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Community Image:"
+                />
+
+            <ImageView
+                android:id="@+id/iv_commu"
+                android:src="@drawable/camera"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_100sdp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="0.82"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/btn_create"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/btn_join_bg"
+            android:text="Create"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+</layout>

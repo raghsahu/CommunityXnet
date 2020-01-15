@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data class="">
+        <variable
+            name="model"
+            type="com.logical.communityapp.model_class.market_place_model.MarketPlaceProductDetailsData"/>
+    </data>
+
+    <LinearLayout
+        android:weightSum="1"
+        android:background="@color/light_grey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar_post"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="true">
+
+            <RelativeLayout
+                android:id="@+id/rl_header"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_arrow_back" />
+
+                <TextView
+                    android:id="@+id/tv_header"
+                    style="@style/textview14white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:text="Product details" />
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_weight="0.17"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:background="@color/light_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="banner ads"/>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardeview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    app:cardElevation="@dimen/_5sdp"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_post"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+
+
+                        <LinearLayout
+                            android:id="@+id/ln3"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/lln"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <ImageView
+                                        android:visibility="gone"
+                                        app:postImage="@{model.postUrl}"
+                                        android:id="@+id/product_image"
+                                        android:scaleType="centerCrop"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="200dp"
+                                        android:padding="2dp"
+
+                                        />
+
+                                </RelativeLayout>
+
+                                <LinearLayout
+
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <LinearLayout
+                                        android:weightSum="1"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_weight="0.5"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Cost:"
+                                            android:textSize="@dimen/_13sdp"
+                                            android:padding="@dimen/_5sdp"
+                                            android:typeface="serif"
+                                            android:textStyle="bold"
+                                            android:maxLines="1"
+                                            android:textColor="#000"
+                                            />
+
+                                        <TextView
+                                            android:id="@+id/tv_budget"
+                                            android:layout_weight="0.5"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@{model.currency + ` ` + model.price}"
+                                            android:textSize="@dimen/_13sdp"
+                                            android:padding="@dimen/_5sdp"
+                                            android:typeface="serif"
+                                            android:textStyle="normal"
+                                            android:maxLines="3"
+                                            android:textColor="#000"
+                                            />
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:weightSum="1"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_weight="0.5"
+                                            android:id="@+id/tv_post_text"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Product name:"
+                                            android:textSize="@dimen/_13sdp"
+                                            android:padding="@dimen/_5sdp"
+                                            android:typeface="serif"
+                                            android:textStyle="bold"
+                                            android:maxLines="1"
+                                            android:textColor="#000"
+                                            />
+
+                                        <TextView
+                                            android:id="@+id/tv_title"
+                                            android:layout_weight="0.5"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@{model.productName}"
+                                            android:textSize="@dimen/_13sdp"
+                                            android:padding="@dimen/_5sdp"
+                                            android:typeface="serif"
+                                            android:textStyle="normal"
+                                            android:maxLines="3"
+                                            android:textColor="#000"
+                                            />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:weightSum="1"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_weight="0.5"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Stock status:"
+                                            android:textSize="@dimen/_13sdp"
+                                            android:padding="@dimen/_5sdp"
+                                            android:typeface="serif"
+                                            android:textStyle="bold"
+                                            android:maxLines="1"
+                                            android:textColor="#000"
+                                            />
+
+                                        <TextView
+                                            android:id="@+id/tv_desc"
+                                            android:layout_weight="0.5"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@{model.stockStatus}"
+                                            android:textSize="@dimen/_13sdp"
+                                            android:padding="@dimen/_5sdp"
+                                            android:typeface="serif"
+                                            android:textStyle="normal"
+                                            android:maxLines="3"
+                                            android:textColor="#000"
+                                            />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:weightSum="1"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_weight="0.5"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Category name:"
+                                            android:textSize="@dimen/_13sdp"
+                                            android:padding="@dimen/_5sdp"
+                                            android:typeface="serif"
+                                            android:textStyle="bold"
+                                            android:maxLines="1"
+                                            android:textColor="#000"
+                                            />
+
+                                        <TextView
+                                            android:id="@+id/tv_category"
+                                            android:layout_weight="0.5"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@{model.categoryName}"
+                                            android:textSize="@dimen/_13sdp"
+                                            android:padding="@dimen/_5sdp"
+                                            android:typeface="serif"
+                                            android:textStyle="normal"
+                                            android:maxLines="3"
+                                            android:textColor="#000"
+                                            />
+
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/white"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="0.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Description:"
+                        android:textSize="@dimen/_13sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:typeface="serif"
+                        android:textStyle="bold"
+                        android:maxLines="1"
+                        android:textColor="#000"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_desciption"
+                        android:layout_weight="0.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@{model.description}"
+                        android:textSize="@dimen/_13sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:typeface="serif"
+                        android:textStyle="normal"
+                        android:textColor="#000"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:padding="@dimen/_10sdp"
+                    android:background="@color/white"
+                    android:id="@+id/ln2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:id="@+id/le1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            app:postImage="@{model.picUrl}"
+                            android:id="@+id/img_person"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/man" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/le2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".7"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:text="@{model.firstName + ` ` + model.lastName}"
+                            android:id="@+id/tv_p_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:typeface="serif"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:text="sunit@gmail.com"
+                            android:id="@+id/tv_p_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:typeface="serif"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:visibility="invisible"
+                        android:id="@+id/le3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:text="@{model.stockStatus}"
+                            android:id="@+id/tv_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:typeface="serif"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/tv_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="06:11:00"
+                            android:typeface="serif"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    >
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/ll_chat_now"
+            android:background="@color/colorPrimary"
+            android:layout_weight="0.83"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chat now"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/white"
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</layout>

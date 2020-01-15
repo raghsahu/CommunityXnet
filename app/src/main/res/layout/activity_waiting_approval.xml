@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:bind="http://schemas.android.com/apk/res/android">
+    <data class = ""/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:context=".Activity.Community.CommunityNew_CreateActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar_post"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="true">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_arrow_back" />
+
+
+                <TextView
+                    android:textAlignment="center"
+                    android:text="Create Community"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:srcCompat="@drawable/ic_arrow_back" />-->
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thanks for create community"
+                android:padding="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_16sdp"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textColor="@color/green"
+                >
+
+            </TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wait for Admin approval"
+                android:padding="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_16sdp"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textColor="@color/green"
+                >
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="See your community in your profile section."
+                android:padding="@dimen/_5sdp"
+                android:textStyle="normal"
+                android:textSize="@dimen/_13sdp"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                >
+
+            </TextView>
+
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <Button
+                    android:id="@+id/btn_back"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/btn_join_bg"
+                    android:text="Back"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

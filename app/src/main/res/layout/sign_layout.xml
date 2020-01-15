@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:background="#F0F7FD"
+        android:orientation="vertical">
+
+        <!--<ScrollView-->
+            <!--style="@android:style/Widget.DeviceDefault.Light.ScrollView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:scrollbars="none"-->
+            <!--android:fillViewport="true"-->
+            <!--&gt;-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <!--<RelativeLayout-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:id="@+id/rel_first"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+
+
+
+                        <!--<ImageView-->
+                            <!--android:scaleType="fitXY"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_310sdp"-->
+                            <!--android:src="@drawable/sign_upnew"-->
+                            <!--/>-->
+
+
+                        <!--<androidx.cardview.widget.CardView-->
+                            <!--android:id="@+id/card_sign"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="8dp"-->
+                            <!--android:layout_marginRight="8dp"-->
+                            <!--app:cardCornerRadius="@dimen/_15sdp"-->
+                            <!--app:cardElevation="@dimen/_10sdp"-->
+                            <!--&gt;-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/textview14Primary"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="SIGNUP" />
+
+
+                                <EditText
+                                    android:id="@+id/et_first_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/shape_edittext"
+                                    android:drawableLeft="@drawable/user_name"
+                                    android:drawablePadding="10dp"
+                                    android:hint="First name"
+                                    android:inputType="text"
+                                    android:padding="@dimen/_10sdp" />
+
+
+                                <EditText
+                                    android:id="@+id/et_last_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/shape_edittext"
+                                    android:drawableLeft="@drawable/user_name"
+                                    android:drawablePadding="10dp"
+                                    android:hint="Last name"
+                                    android:inputType="text"
+                                    android:padding="@dimen/_10sdp" />
+
+                                <EditText
+                                    android:id="@+id/et_mobile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/shape_edittext"
+                                    android:drawableLeft="@drawable/user_name"
+                                    android:drawablePadding="10dp"
+                                    android:hint="Mobile number"
+                                    android:inputType="number"
+                                    android:padding="@dimen/_10sdp" />
+
+                                <EditText
+                                    android:id="@+id/et_email"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/shape_edittext"
+                                    android:drawableLeft="@drawable/ic_mail"
+                                    android:drawablePadding="10dp"
+                                    android:hint="Email Id"
+                                    android:inputType="textEmailAddress"
+                                    android:padding="@dimen/_10sdp" />
+
+
+                                <EditText
+                                    android:id="@+id/et_pass"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/shape_edittext"
+                                    android:drawableLeft="@drawable/ic_lock"
+                                    android:drawablePadding="10dp"
+                                    android:hint="Password"
+                                    android:inputType="textPassword"
+                                    android:padding="@dimen/_10sdp"
+                                    android:paddingBottom="@dimen/_10sdp"
+                                    android:windowSoftInputMode="stateAlwaysVisible"
+                                    />
+
+
+
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/shape_edittext"
+                                    android:drawableLeft="@drawable/user_name"
+                                    android:drawablePadding="10dp"
+                                    android:hint="First name"
+                                    android:inputType="text"
+                                    android:padding="@dimen/_10sdp" />
+
+
+                                <EditText
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/shape_edittext"
+                                    android:drawableLeft="@drawable/user_name"
+                                    android:drawablePadding="10dp"
+                                    android:hint="Last name"
+                                    android:inputType="text"
+                                    android:padding="@dimen/_10sdp" />
+
+                                <EditText
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/shape_edittext"
+                                    android:drawableLeft="@drawable/user_name"
+                                    android:drawablePadding="10dp"
+                                    android:hint="Mobile number"
+                                    android:inputType="number"
+                                    android:padding="@dimen/_10sdp" />
+
+                                <EditText
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/shape_edittext"
+                                    android:drawableLeft="@drawable/ic_mail"
+                                    android:drawablePadding="10dp"
+                                    android:hint="Email Id"
+                                    android:inputType="textEmailAddress"
+                                    android:padding="@dimen/_10sdp" />
+
+
+                                <EditText
+                                    android:layout_marginBottom="@dimen/_50sdp"
+                                    android:id="@+id/et_pass123"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/shape_pw"
+                                    android:drawableLeft="@drawable/ic_lock"
+                                    android:drawablePadding="10dp"
+                                    android:hint="Password"
+                                    android:inputType="textPassword"
+                                    android:padding="@dimen/_10sdp"
+                                    android:windowSoftInputMode="stateAlwaysVisible"
+                                    android:overScrollMode="always"
+                                    android:scrollbarStyle="insideInset"
+                                    android:scrollbars="vertical"
+                                    android:singleLine="false"
+                                    android:isScrollContainer="true"
+                                    android:focusable="true"
+                                    />
+
+
+                                <!--<LinearLayout-->
+                                    <!--android:layout_marginTop="@dimen/_30sdp"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="@dimen/_50sdp">-->
+
+                                <!--</LinearLayout>-->
+
+
+                            </LinearLayout>
+
+
+
+
+
+                        <!--</androidx.cardview.widget.CardView>-->
+
+
+                    <!--<LinearLayout-->
+                        <!--android:id="@+id/ll_signup"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentBottom="true"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_marginTop="30dp"-->
+                        <!--android:gravity="center"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="@dimen/_60sdp"-->
+                            <!--android:layout_height="@dimen/_60sdp"-->
+                            <!--android:scaleType="fitXY"-->
+                            <!--android:src="@drawable/click_sign" />-->
+
+                    <!--</LinearLayout>-->
+
+                <!--</RelativeLayout>-->
+
+
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/ll_log"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/rel_first"-->
+                    <!--android:layout_marginTop="@dimen/_20sdp"-->
+                    <!--android:layout_marginBottom="@dimen/_20sdp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="horizontal">-->
+
+
+                    <!--<TextView-->
+                        <!--style="@style/textview12primary"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="Already have an account?" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/textview14Primary"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="center"-->
+                        <!--android:padding="@dimen/_5sdp"-->
+                        <!--android:text="Login" />-->
+
+
+                <!--</LinearLayout>-->
+
+
+
+
+            </LinearLayout>
+
+        <!--</ScrollView>-->
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+

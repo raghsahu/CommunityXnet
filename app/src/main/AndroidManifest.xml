@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.logical.communityapp">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.compass"
+        android:required="true" />
+
+    <application
+        android:allowBackup="false"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/community"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/community"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="stateVisible|adjustResize"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Activity.Login_Signup.SignupWaitingApproval"></activity>
+        <activity android:name=".Activity.All_Chat.Chat_Activity" />
+        <activity android:name=".Activity.All_Chat.All_Chat_Activity" />
+        <activity android:name=".Activity.Community.WaitingApprovalActivity" />
+        <activity android:name=".Activity.MarketPlace.MarketProductDetailsActivity" />
+        <activity android:name=".Activity.MarketPlace.MyProductActivity" />
+        <activity android:name=".Activity.MarketPlace.UploadProductActivity" />
+        <activity android:name=".Activity.MarketPlace.MyMarketPlace" /> <!-- <activity android:name=".Activity.MarketPlace.Post_NewProduct" /> -->
+        <activity android:name=".Activity.DirectoryListing.DirectoryBusinessActivity" />
+        <activity android:name=".Activity.DirectoryListing.JoinArtisanActivity" />
+        <activity android:name=".Activity.Community.LatestPostDetails" />
+        <activity android:name=".Activity.News_Menu.NewsDetailsActivity" />
+        <activity android:name=".Activity.News_Menu.MyNewsPostActivity" />
+        <activity android:name=".Activity.News_Menu.PostNewsActivity" />
+        <activity android:name=".Activity.I_Report.My_I_ReportPostActivity" />
+        <activity android:name=".Activity.Maintenance_Request.MaintenanceDetailsActivity" />
+        <activity android:name=".Activity.Maintenance_Request.My_Service_RequestActivity" />
+        <activity android:name=".Activity.I_Report.I_Report_postNewActivity" />
+        <activity android:name=".Activity.I_Report.I_report_details_Activity" />
+        <activity android:name=".Activity.Events_Menu.AddEventActivity" />
+        <activity
+            android:name=".Activity.Events_Menu.Event_List_Activity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".Activity.HOA_Dashboard.HOA_Dashboard" />
+        <activity android:name=".Activity.Profile_Related.SeeListJoinedCommunity" />
+        <activity android:name=".Activity.Profile_Related.SeeListMyselfCommunty" />
+        <activity android:name=".Activity.Profile_Related.EditProfileActivity" />
+        <activity android:name=".Activity.Login_Signup.ForgotPasswordActivity" />
+        <activity android:name=".Activity.Profile_Related.ProfileActivity" />
+        <activity android:name=".Activity.I_Report.I_Report_postActivity" />
+        <activity android:name=".Activity.Events_Menu.Event_List_details_Activity" />
+        <activity android:name=".Activity.Maintenance_Request.Post_NewService_Request" />
+        <activity android:name=".Activity.DirectoryListing.PostArtisanActivity" />
+        <activity android:name=".Activity.DirectoryListing.Review_ArtisanActivity" />
+        <activity android:name=".Activity.Community.CommunityNewPostActivity" />
+        <activity android:name=".Activity.Community.CommunityNew_CreateActivity" />
+        <activity android:name=".Activity.Community.CommunityJoin_NowActivity" />
+        <activity android:name=".Activity.Community.CommunityDetailsActivity" />
+        <activity android:name=".Activity.Community.SeeAllCommunityActivity" />
+        <activity
+            android:name=".Activity.Login_Signup.Sign_up_Activity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".Activity.Login_Signup.LoginActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".Activity.Login_Signup.Welcome_Activity" />
+        <activity android:name=".Activity.Login_Signup.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+
+<!--        pick image and file provider-->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths" />
+        </provider>
+
+<!--        firebase setup-->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/community" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+<!--        <meta-data-->
+<!--            android:name="com.google.firebase.messaging.default_notification_channel_id"-->
+<!--            android:value="@string/default_notification_channel_id" />-->
+<!--        <meta-data-->
+<!--            android:name="firebase_messaging_auto_init_enabled"-->
+<!--            android:value="false" />-->
+<!--        <meta-data-->
+<!--            android:name="firebase_analytics_collection_enabled"-->
+<!--            android:value="false" />-->
+
+        <service
+            android:name=".firebase_service.MyFirebaseMessagingService"
+            android:exported="true"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+
+
+
+    </application>
+
+</manifest>

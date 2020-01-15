@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data class="">
+
+    </data>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Events_Menu.AddEventActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_post"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_arrow_back" />
+
+
+            <TextView
+                android:textAlignment="center"
+                android:text="Add Event"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:srcCompat="@drawable/ic_arrow_back" />-->
+
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <EditText
+            android:windowSoftInputMode="stateAlwaysVisible"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:isScrollContainer="true"
+            android:focusable="true"
+            android:id="@+id/et_event_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext"
+            android:drawableLeft="@drawable/user_name"
+            android:drawablePadding="@dimen/_10sdp"
+            android:hint="Event name"
+            android:inputType="text"
+            android:padding="@dimen/_10sdp" />
+
+        <LinearLayout
+            android:windowSoftInputMode="stateAlwaysVisible"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:isScrollContainer="true"
+            android:focusable="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/shape_edittext"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp">
+
+
+        <EditText
+            android:id="@+id/et_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@null"
+            android:drawableLeft="@drawable/user_name"
+            android:drawablePadding="@dimen/_10sdp"
+            android:hint="About"
+            android:inputType="textMultiLine"
+
+            android:padding="@dimen/_10sdp" />
+
+
+
+        </LinearLayout>
+
+
+
+
+        <EditText
+            android:windowSoftInputMode="stateAlwaysVisible"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:isScrollContainer="true"
+            android:focusable="true"
+            android:id="@+id/et_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/shape_edittext"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="@dimen/_10sdp"
+            android:hint="location"
+            android:inputType="text"
+            android:padding="@dimen/_10sdp" />
+
+        <EditText
+            android:windowSoftInputMode="stateAlwaysVisible"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:isScrollContainer="true"
+            android:focusable="true"
+            android:id="@+id/et_venue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/shape_edittext"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="@dimen/_10sdp"
+            android:hint="Venue"
+            android:inputType="text"
+            android:padding="@dimen/_10sdp" />
+
+        <TextView
+            android:windowSoftInputMode="stateAlwaysVisible"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:isScrollContainer="true"
+            android:focusable="true"
+            android:id="@+id/et_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/shape_edittext"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="@dimen/_10sdp"
+            android:hint="Date"
+            android:editable="false"
+            android:textColor="@color/black"
+            android:padding="@dimen/_10sdp" />
+
+        <TextView
+            android:windowSoftInputMode="stateAlwaysVisible"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:isScrollContainer="true"
+            android:focusable="true"
+            android:id="@+id/et_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/shape_edittext"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="@dimen/_10sdp"
+            android:hint="Time"
+            android:editable="false"
+            android:textColor="@color/black"
+            android:padding="@dimen/_10sdp" />
+
+        <TextView
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose image (optional)"
+            android:layout_marginLeft="@dimen/_5sdp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/star"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_first"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_send_request"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/btn_join_bg"
+            android:text="Create"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+</layout>

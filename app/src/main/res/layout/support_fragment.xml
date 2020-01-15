@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="supportdata"
+            type="com.logical.communityapp.model_class.support_model.SupportFillData"></variable>
+    </data>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <TextView
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: support@communityxnet.com"
+                android:textSize="@dimen/_16sdp"
+
+                >
+            </TextView>
+
+            <TextView
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone: 1-888-123-456-89"
+                android:textSize="@dimen/_16sdp"
+
+                >
+            </TextView>
+
+            <TextView
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address: 123 New Design Str, Melbourne, Australia"
+                android:textSize="@dimen/_16sdp"
+
+                >
+            </TextView>
+
+
+            <View
+                android:background="@color/light_grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp">
+
+            </View>
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send message"
+                android:textSize="@dimen/_16sdp"
+
+                >
+            </TextView>
+
+
+
+
+            <EditText
+                android:text="@={supportdata.title_query}"
+                android:windowSoftInputMode="stateAlwaysVisible"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:id="@+id/et_title"
+                android:gravity="start"
+                android:padding="@dimen/_10sdp"
+                android:hint="Title of querry"
+                android:layout_margin="@dimen/_10sdp"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_edittext"
+                />
+
+            <EditText
+                android:text="@={supportdata.query_desc}"
+                android:windowSoftInputMode="stateAlwaysVisible"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:id="@+id/et_desc"
+                android:gravity="start"
+                android:padding="@dimen/_5sdp"
+                android:hint="Description"
+                android:inputType="text"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:background="@drawable/shape_edittext"
+
+                />
+
+
+            <Button
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/btn_submit"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/btn_join_bg"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>
+
+</layout>

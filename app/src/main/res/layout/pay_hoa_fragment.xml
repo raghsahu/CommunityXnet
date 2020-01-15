@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/home"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp" />
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <!--<androidx.cardview.widget.CardView-->
+            <!--android:layout_margin="@dimen/_10sdp"-->
+            <!--app:cardElevation="@dimen/_10sdp"-->
+            <!--android:elevation="@dimen/_10sdp"-->
+            <!--app:cardCornerRadius="@dimen/_5sdp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/_150sdp">-->
+
+
+        <TextView
+            android:layout_marginTop="@dimen/_40sdp"
+            android:textAlignment="center"
+            android:textSize="@dimen/_14sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send request for join HOA"
+            android:textStyle="normal"
+            android:textColor="@color/gray"
+            />
+
+
+
+            <Button
+                android:layout_marginTop="@dimen/_60sdp"
+                android:id="@+id/btn_send_request"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/btn_join_bg"
+                android:text="Send Request"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+
+        <!--</androidx.cardview.widget.CardView>-->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_login_hoa"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textAlignment="center"
+            android:textSize="@dimen/_16sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If already join, login HOA"
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

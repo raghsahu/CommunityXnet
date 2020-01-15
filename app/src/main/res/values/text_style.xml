@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="font" parent="TextAppearance.Design.Tab">
+        <item name="android:fontFamily">@font/aileron_regular</item>
+        <item name="android:textSize">@dimen/_8sdp</item>
+        <item name="android:singleLine">false</item>
+        <item name="textAllCaps">false</item>
+
+    </style>
+
+    <!--Fragment Home--><!--CardView-->
+
+    <style name="cardview">
+        <item name="cardBackgroundColor">@color/color_white</item>
+        <item name="cardCornerRadius">@dimen/_5sdp</item>
+        <item name="cardElevation">@dimen/_3sdp</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <!--list item Home--><!--CardView--><!-- Textview-->
+    <style name="item_list_text">
+        <item name="android:textColor">@color/light_black</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/aileron_regular</item>
+    </style>
+
+
+    <!--list item Home--><!--CardView--><!-- Textview-->
+    <style name="textview16black">
+        <item name="android:textColor">@color/light_black</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/aileron_regular</item>
+    </style>
+    <style name="textview14black">
+        <item name="android:textColor">@color/light_black</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/aileron_regular</item>
+    </style>
+    <style name="textview12black">
+        <item name="android:textColor">@color/light_black</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/aileron_regular</item>
+    </style>
+    <style name="textview14Primary">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/aileron_regular</item>
+    </style>
+    <style name="textview12primary">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/aileron_regular</item>
+    </style>
+    <style name="textview12white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/aileron_regular</item>
+    </style>
+
+    <style name="textview14white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/aileron_regular</item>
+    </style>
+    <style name="textview14gray">
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/aileron_regular</item>
+    </style>
+
+    <style name="text12_bold_small">
+        <item name="android:textSize">@dimen/_12sdp</item>
+       <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textview16blue">
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/aileron_semibold</item>
+    </style>
+
+</resources>

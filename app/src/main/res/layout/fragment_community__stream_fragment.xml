@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Community_Stream_fragment">
+
+    <!--<com.google.android.material.tabs.TabLayout-->
+        <!--android:id="@+id/tabLayout"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:tabStripEnabled="false"-->
+        <!--app:tabIndicatorColor="@android:color/transparent"-->
+        <!--app:tabIndicatorHeight="0dp"-->
+        <!--app:tabSelectedTextColor="@color/colorPrimary"-->
+        <!--app:tabTextColor="@color/black"-->
+        <!--app:tabMode="scrollable"-->
+        <!--android:layout_width="match_parent"-->
+        <!--style="@style/MineCustomTabText"-->
+        <!--android:layout_height="wrap_content">-->
+
+
+        <!--<com.google.android.material.tabs.TabItem-->
+            <!--android:id="@+id/tabplay"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="I-report" />-->
+
+        <!--<com.google.android.material.tabs.TabItem-->
+            <!--android:id="@+id/tabcompleted"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Notice" />-->
+
+        <!--<com.google.android.material.tabs.TabItem-->
+            <!--android:id="@+id/tabresults"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Recent post" />-->
+
+        <!--<com.google.android.material.tabs.TabItem-->
+            <!--android:id="@+id/artisans"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Resent artisans" />-->
+
+        <!--<com.google.android.material.tabs.TabItem-->
+            <!--android:id="@+id/Maintenance"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Resent Maintenance" />-->
+
+    <!--</com.google.android.material.tabs.TabLayout>-->
+
+    <!--<androidx.viewpager.widget.ViewPager-->
+
+        <!--android:id="@+id/viewPager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+    <!--</androidx.viewpager.widget.ViewPager>-->
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/simpleFrameLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+
+
+
+
+
+
+</LinearLayout>
